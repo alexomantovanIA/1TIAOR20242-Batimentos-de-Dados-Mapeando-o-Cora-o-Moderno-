@@ -73,25 +73,11 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 ---
 
 ### 🖼️ Parte 3 — Dados Visuais (VC)
-
-- **Tipo**: **ECG** (944 imagens`.jpg`)  
-- **Link para download (Google Drive)**: **https://drive.google.com/drive/folders/1QFmSOT5SL0NrG7mY9n-_CrEzSdFGWnBq?usp=sharing
-**
-- **Amostras locais**: `samples/imagens_sample/` (4 exemplos)
-- **Documentação completa**: `samples/link_imagens_completas.md`
-
-**Dataset características:**
-- Origem: data.mendeley.com
-- Aplicação: Classificação e detecção de anomalias por IA
-- Formato padronizado para análise computacional
-- Dados anonimizados e de uso acadêmico
-
-**Análises previstas (próximas fases):**
-- Pré-processamento e normalização de imagens
-- Extração de características (bordas, texturas, padrões)
-- Treinamento de CNN para classificação automática
-- Métricas: acurácia, sensibilidade, especificidade
-
+- **Tipo sugerido**: **ECG** (≥ 100 imagens `.png` ou `.jpg`)  
+- **Link para download (Drive/OneDrive)**: **[INSERIR_LINK_PUBLICO]**  
+- **Amostras**: opcionalmente inclua 4–6 imagens em `samples/imagens_sample/`  
+- **Possíveis usos**: detecção de padrões (QRS), **reconhecimento de anomalias**, extração de características (FFT, bordas, textura).  
+- **Alternativa**: gerar ECGs sintéticos com `scripts/gerar_ecg_sintetico_em_imagens.py`.
 
 ---
 
