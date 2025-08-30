@@ -42,7 +42,7 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 ## 📦 Entregáveis
 
 ### 📊 Parte 1 — Dados Numéricos (IoT)
-- **Link para download (Drive/OneDrive)**: **[INSERIR_LINK_PUBLICO]**
+- **Link para download (Drive/OneDrive)**: **[https://docs.google.com/spreadsheets/d/1L95psjpKOSCRISwpy52hlgUXfQptkgSF/edit?gid=1256256245#gid=1256256245]**
 - **Formato**: `.csv` e/ou `.xlsx` (≥ 100 linhas)
 - **Origem**: dados **sintéticos** gerados via `scripts/gerar_dados_numericos.py` *(ou substitua por base pública com citação)*
 - **Variáveis sugeridas (exemplos)**:  
