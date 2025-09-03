@@ -45,7 +45,7 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 - **Arquivos** `samples/tabelas_sample/base_cardiaca.xlsx`
 - **Link para download (Drive/OneDrive)**: **[https://docs.google.com/spreadsheets/d/1L95psjpKOSCRISwpy52hlgUXfQptkgSF/edit?gid=1256256245#gid=1256256245]**
 - **Formato**: `.csv` e/ou `.xlsx` (≥ 100 linhas)
-- **Origem**: 
+- **Origem**: Dados simulados
 
 **Dicionário de dados (resumo):**
 
