@@ -151,11 +151,6 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 ```bash
 pip install -r requirements.txt
 ```
-
-**Exemplo de `requirements.txt`** (sugerido):
-```
-
-```
 ---
 
 ## 📝 Licença
