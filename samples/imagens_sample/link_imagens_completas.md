@@ -2,12 +2,6 @@
 
 ## 🖼️ Dados Visuais - ECG - Eletrocardiogramas
 
-**Responsável:** Ricardo L Coube
-
-**Link para todas as imagens:**
-(https://drive.google.com/drive/folders/1QFmSOT5SL0NrG7mY9n-_CrEzSdFGWnBq?usp=sharing
-)
-
 ## 📊 Detalhes do Dataset
 
 - **Quantidade:** 944 imagens

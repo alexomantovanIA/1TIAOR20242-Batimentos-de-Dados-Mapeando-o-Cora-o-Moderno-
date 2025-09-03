@@ -42,11 +42,10 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 ## 📦 Entregáveis
 
 ### 📊 Parte 1 — Dados Numéricos (IoT)
+- **Arquivos** `samples/tabelas_sample/base_cardiaca.xlsx`
 - **Link para download (Drive/OneDrive)**: **[https://docs.google.com/spreadsheets/d/1L95psjpKOSCRISwpy52hlgUXfQptkgSF/edit?gid=1256256245#gid=1256256245]**
 - **Formato**: `.csv` e/ou `.xlsx` (≥ 100 linhas)
-- **Origem**: dados **sintéticos** gerados via `scripts/gerar_dados_numericos.py` *(ou substitua por base pública com citação)*
-- **Variáveis sugeridas (exemplos)**:  
-`idade`, `sexo`, `imc`, `pressao_sistolica`, `pressao_diastolica`, `ldl`, `hdl`, `triglicerides`, `colesterol_total`, `freq_cardiaca`, `fumante`, `diabetes`, `historico_familiar`, `sintoma_dor_toracica`, `alvo_doenca_cardiaca`.
+- **Origem**: Dados simulados
 
 **Dicionário de dados (resumo):**
 
@@ -66,8 +65,8 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 ---
 
 ### 📝 Parte 2 — Dados Textuais (NLP)
-- **Arquivos**: `docs/textos/texto_01.txt`, `docs/textos/texto_02.txt` *(≥ 2 textos)*  
-- **Fontes & Licenças**: ver `docs/fontes_e_licencas.md`  
+- **Arquivos**: `docs/textos/doppler_fluxo_sanguineo.txt`, `docs/textos/imagiologia_cardiovascular.txt`
+- **Fontes & Licenças**: ver `docs/textos/Cap 1 - Batimento de dados`
 - **Possíveis usos**: classificação de tópicos (prevenção/diagnóstico/tratamento), **extração de sintomas** (NER), análise de sentimentos, **sumarização** de protocolos.
 
 ---
@@ -75,10 +74,9 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 ### 🖼️ Parte 3 — Dados Visuais (VC)
 
 - **Tipo**: **ECG** (944 imagens`.jpg`)  
-- **Link para download (Google Drive)**: **https://drive.google.com/drive/folders/1QFmSOT5SL0NrG7mY9n-_CrEzSdFGWnBq?usp=sharing
-**
+- **Link para download (Google Drive)**: [**https://drive.google.com/drive/folders/1QFmSOT5SL0NrG7mY9n-_CrEzSdFGWnBq?usp=sharing**]
 - **Amostras locais**: `samples/imagens_sample/` (4 exemplos)
-- **Documentação completa**: `samples/link_imagens_completas.md`
+- **Documentação completa**: `samples/images_sample/link_imagens_completas.md`
 
 **Dataset características:**
 - Origem: data.mendeley.com
@@ -92,16 +90,6 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 - Treinamento de CNN para classificação automática
 - Métricas: acurácia, sensibilidade, especificidade
 
-
----
-
-### 🔧 Scripts inclusos
-- `scripts/gerar_dados_numericos.py` – gera CSV/XLSX sintético realista (≥ 500 linhas).  
-- `scripts/exemplo_nlp.py` – exemplo didático de tópicos (LDA) e extração simples de sintomas.  
-- `scripts/gerar_ecg_sintetico_em_imagens.py` – cria 100 PNGs de ECG sintético.
-
-> **Recomendação**: mantenha no repositório apenas **amostras**; hospede os conjuntos completos no **Drive/OneDrive** e referencie o **link público** no README.
-
 ---
 
 ## 🧪 Metodologia
@@ -114,16 +102,16 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 
 ---
 
-## 📈 Visualizações (Exemplos sugeridos)
+## 📈 Visualizações
 - Histogramas de `pressao_sistolica`, `ldl`, `imc` e `freq_cardiaca`.  
-- Curvas exemplo de ECG (normais x com *artefatos*).  
+- Curvas exemplo de ECG (normais x com *artefatos*).
 - **NLP**: *wordcloud* de termos e tópicos principais por LDA.  
 
 *(As figuras serão adicionadas nas próximas fases conforme análises forem realizadas.)*
 
 ---
 
-## 📊 Métricas (a acompanhar nas próximas fases)
+## 📊 Métricas
 - **Base numérica**: métricas de um baseline (ex.: regressão logística) para previsão de `alvo_doenca_cardiaca` — *acurácia, F1, AUC*.  
 - **NLP**: *coherence score* para tópicos; precisão de extração de entidades (quando houver *gold standard*).  
 - **Visão**: acurácia/ROC para classificar ECGs (normal vs anômalo) em *hold-out* didático.
@@ -135,20 +123,23 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 ```
 📦 1TIAOR20242-Batimentos-de-Dados-Mapeando-o-Cora-o-Moderno
 │
-├─ docs/                
-│   ├─ textos/
-│   │   ├─ texto_01.txt
-│   │   └─ texto_02.txt
-│   └─ fontes_e_licencas.md
-├─ scripts/
-│   ├─ 
-│   ├─ 
-│   └─ 
-├─ samples/             
-│   ├─ exemplo_sample.csv 
-│   └─ imagens_sample/  
-├─ .gitignore
-└── requirements.txt
+├─ assets/
+│   └─ logo-fiap.png
+├─ docs/
+│   └─ textos/
+│       ├─ Cap 1 - Batimento de dados.pdf
+│       ├─ doppler_fluxo_sanguineo.txt
+│       └─ imagiologia_cardiovascular.txt
+├─ samples/
+│   ├─ imagens_sample/
+│   │   ├─ ECG_HB.jpg
+│   │   ├─ ECG_MI.jpg
+│   │   ├─ ECG_Normal.jpg
+│   │   └─ ECG_PMI.jpg
+│   └─ tabelas_sample/
+│       └─ base_cardiaca.xlsx
+├─ README.md
+└─ requirements.txt
 ```
 
 ---
@@ -156,7 +147,6 @@ Nesta fase, atuamos como *cientistas de dados hospitalares* para **levantar, org
 ## ✅ Requisitos para Execução
 
 - Python **3.10+**
-- (Opcional) Jupyter Notebook ou Google Colab
 
 ```bash
 pip install -r requirements.txt
@@ -164,24 +154,8 @@ pip install -r requirements.txt
 
 **Exemplo de `requirements.txt`** (sugerido):
 ```
-numpy
-pandas
-matplotlib
-scikit-learn
+
 ```
-> Adicione bibliotecas extras conforme sua evolução (ex.: `spacy`, `pillow`, `opencv-python`).
-
----
-
-## 🔍 Checklist Rápido (antes de enviar)
-
-- [ ] CSV/XLSX com **≥ 100 linhas** e **link público** testado.  
-- [ ] **2 textos `.txt`** em `docs/textos/` + `docs/fontes_e_licencas.md`.  
-- [ ] **100 imagens** no Drive/OneDrive + 4–6 amostras em `samples/`.  
-- [ ] **Dicionário de dados** e **racional clínico** descritos acima.  
-- [ ] Scripts funcionais em `scripts/` e instruções de execução.  
-- [ ] Avisos de **LGPD/ética** e finalidade **acadêmica**.
-
 ---
 
 ## 📝 Licença
